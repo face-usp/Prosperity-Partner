@@ -36,6 +36,9 @@ const Navbar = () => {
             <a href="#about" className="hover:text-amber-600 transition">
               About
             </a>
+            <a href="#reviews" className="hover:text-amber-600 transition">
+              Reviews
+            </a>
             <a href="#contact" className="hover:text-amber-600 transition">
               Contact
             </a>
