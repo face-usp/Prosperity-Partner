@@ -5,26 +5,31 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 const reviews = [
   {
     name: "Himangi Mutha",
-    profession:"Architect ( US returned NRI )",
-    feedback: `Deepak Shah has been handling managing my mutual fund investments and I’m extremely satisfied with the experience. From the very beginning, he has been proactive in understanding my financial goals and guiding me on how best to structure my investments. What I appreciate most is his ability to explain things clearly and provide practical advice on where to invest, how much to allocate, and the right SIP amounts for my needs. His recommendations are always well thought out, and he ensures I feel confident before making any financial decision. Since he started managing my account, I have seen steady and continuous growth in my portfolio, which has given me both peace of mind and trust in his expertise. Beyond numbers, he is approachable, patient with queries, and always willing to go the extra mile to make sure I understand the process. I truly value the professionalism and personal attention he brings to investment management. I would highly recommend Prosperity Partners to anyone looking for reliable, transparent, and growth-oriented financial guidance. Thanks , Himangi.`,
+    profession: "Architect ( US returned NRI )",
+    feedback: `Deepak Shah has been handling managing my mutual fund investments and I’m extremely satisfied with the experience. From the very beginning, he has been proactive in understanding my financial goals and guiding me on how best to structure my investments. What I appreciate most is his ability to explain things clearly and provide practical advice on where to invest, how much to allocate, and the right SIP amounts for my needs. His recommendations are always well thought out, and he ensures I feel confident before making any investment decision. Since he started managing my account, I have seen steady and continuous growth in my portfolio, which has given me both peace of mind and trust in his expertise. Beyond numbers, he is approachable, patient with queries, and always willing to go the extra mile to make sure I understand the process. I truly value the professionalism and personal attention he brings to my investment management . I would highly recommend Prosperity Partners to anyone looking for reliable, transparent, and growth-oriented investment guidance.`,
   },
   {
     name: "Dr. Mahesh Bhujbal",
-    feedback: `I would highly recommend Mr Deepak shah. His knowledge and expertise have been invaluable in assisting us in managing our Daughters Education and retirement goals. I liked that Mr Deepak Saha tailored his advice to our goals and circumstances and didn't push us into any higher risk investment strategy. He places their clients' interests first and works to either help mitigate any potential conflicts of interest as much as they can when working with clients. They also communicate as much as possible to help clients understand risks and other information critical to their decision-making processes.`,
+    feedback: `I would highly recommend Mr. Deepak Shah for his exceptional investment guidance. His knowledge and expertise have been invaluable in helping us plan for our daughter’s education and our retirement goals. What I truly appreciate is how he tailored his advice to our specific needs and circumstances, without ever pushing us towards unnecessary or higher-risk investment strategies.
+`,
   },
   {
     name: "Dr. Dharmesh Gandhi",
-    feedback: `Mr Deepak Shah- is an exceptionally intelligent and results-driven mutual fund broker with a proven track record of guiding clients toward sustainable, long-term financial growth. Known for combining deep market insight with data-driven strategies, Deepak brings an analytical mindset, sharp foresight, and an unwavering commitment to maximizing returns while managing risk. He is intelligent, matured and passionate to grow his clients money thru legitimate means`,
+    feedback: `Mr. Deepak Shah is an exceptionally knowledgeable and results-driven mutual fund distributor with a proven track record of guiding clients towards sustainable, long-term financial growth. He combines deep market insight with data-driven strategies, bringing both analytical foresight and a strong commitment to maximizing returns while carefully managing risk.
+What sets him apart is not only his intelligence and maturity but also his genuine passion for helping clients grow their wealth through transparent and legitimate means. With his guidance, you can be assured of a strategic, well-structured, and trustworthy approach to investment management.
+
+`,
   },
   {
-    name: "Unhale Family",
-    profession:"Abhijit Unhale ( Software Developer as HP  & Khyati Patel as Homeopathy) ",
-    feedback: `I had a lovely and a complete Information regarding investing in SIP as I was totally new to it. And he gave me the best plan and scheme according to our needs. Special Thanks to Mr Deepak Shah and Priyanka Shah for everything. 🙏🏻`,
+    name: "Abhijit Unhale Family",
+    profession:
+      "Abhijit Unhale as Software Developer at HP  & Khyati Patel as Homeopathy ",
+    feedback: `As someone completely new to SIP investments, it has been a wonderful experience receiving clear and complete guidance from Mr. Deepak Shah. He patiently explained everything and suggested the best plan and scheme tailored to our needs. A special thanks to both Mr. Deepak Shah and Ms. Priyanka Shah for their support and guidance.`,
   },
   {
     name: " Amruta Beldar",
-    profession:"HR Professional",
-    feedback: `I've trusted prosperity partners/Deepak with my investments for almost 8 years now. His clear advice and consistent support have made my financial journey smooth and confident.`,
+    profession: "HR Professional",
+    feedback: `I have trusted Prosperity Partners and Mr. Deepak Shah with my investments for almost 8 years now, and the journey has been extremely smooth and reassuring. His clear advice, consistent support, and client-first approach have given me great confidence in my investment decisions.`,
   },
 ];
 
