@@ -16,7 +16,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between px-4 py-4 sm:py-6">
           {/* Logo and title */}
           <a
-            href="#"
+            href="/"
             className="flex items-center justify-start gap-2 mr-10 sm:absolute sm:left-1/2 sm:transform sm:-translate-x-1/2"
           >
             <Image src={logoBg} alt="Logo" className="h-[100px] w-[100px]" />
@@ -27,19 +27,22 @@ const Navbar = () => {
 
           {/* Desktop Links */}
           <div className="hidden sm:flex ml-auto items-center gap-6 text-sm sm:text-base font-medium">
-            <a href="#home" className="hover:text-amber-600 transition">
+            <a href="/" className="hover:text-amber-600 transition">
               Home
             </a>
-            <a href="#services" className="hover:text-amber-600 transition">
+            <a href="/#services" className="hover:text-amber-600 transition">
               Services
             </a>
-            <a href="#about" className="hover:text-amber-600 transition">
+            <a href="/#about" className="hover:text-amber-600 transition">
               About
             </a>
-            <a href="#reviews" className="hover:text-amber-600 transition">
+            <a href="/#reviews" className="hover:text-amber-600 transition">
               Reviews
             </a>
-            <a href="#contact" className="hover:text-amber-600 transition">
+            <a href="/calculator" className="hover:text-amber-600 transition">
+              Calculators
+            </a>
+            <a href="/#contact" className="hover:text-amber-600 transition">
               Contact
             </a>
           </div>
@@ -59,35 +62,42 @@ const Navbar = () => {
         {isOpen && (
           <div className="sm:hidden bg-white px-4 pb-4 flex flex-col gap-4 text-base font-medium shadow-md">
             <a
-              href="#home"
+              href="/"
               className="hover:text-amber-600 transition"
               onClick={toggleMenu}
             >
               Home
             </a>
             <a
-              href="#services"
+              href="/#services"
               className="hover:text-amber-600 transition"
               onClick={toggleMenu}
             >
               Services
             </a>
             <a
-              href="#about"
+              href="/#about"
               className="hover:text-amber-600 transition"
               onClick={toggleMenu}
             >
               About
             </a>
             <a
-              href="#feedback"
+              href="/#reviews"
               className="hover:text-amber-600 transition"
               onClick={toggleMenu}
             >
-              Feedback
+              Reviews
             </a>
             <a
-              href="#contact"
+              href="/calculator"
+              className="hover:text-amber-600 transition"
+              onClick={toggleMenu}
+            >
+              Calculators
+            </a>
+            <a
+              href="/#contact"
               className="hover:text-amber-600 transition"
               onClick={toggleMenu}
             >
