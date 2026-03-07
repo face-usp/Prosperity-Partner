@@ -110,6 +110,12 @@ export async function POST(request: NextRequest) {
 
     const sipRequired = (remainingCorpusNeeded * r) / (Math.pow(1 + r, n) - 1);
 
+    // format
+    const nn = (num: number) => Math.max(0, num); // non-negative
+    const fixed3 = (num: number) => nn(Number(num.toFixed(3)));
+    const round = (num: number) => nn(Math.round(num));
+    
+
     // ---- Step 6: Delay Scenarios ----
     const delays = [0, 1, 3, 5];
     const investmentPattern = delays.map((delay) => {
@@ -122,22 +128,22 @@ export async function POST(request: NextRequest) {
 
       return {
         delayYears: delay,
-        lumpsum: Number(lumpsum.toFixed(3)),
-        sip: Number(sip.toFixed(3)),
+        lumpsum: fixed3(lumpsum),
+        sip: fixed3(sip),
       };
     });
 
+
     // ---- Response ----
     return NextResponse.json({
-      monthlyExpenseAtRetirement: Number(monthlyExpenseAtRetirement.toFixed(3)),
-      corpusRequired: Number(Math.round(corpusRequired)),
-      appreciatedExistingSavings: Number(appreciatedExistingSavings.toFixed(3)),
-      additionalRetirementCorpusNeeded: Number(
-        (corpusRequired - appreciatedExistingSavings).toFixed(3)
-      ),
-      lumpsumRequired: Number(Math.round(lumpsumRequired)),
-      sipRequired: Number(sipRequired.toFixed(3)),
-      weightedPreRetirementReturn: Number(weightedPreRetirementReturn.toFixed(3)),
+      monthlyExpenseAtRetirement: fixed3(monthlyExpenseAtRetirement),
+      corpusRequired: round(corpusRequired),
+      appreciatedExistingSavings: fixed3(appreciatedExistingSavings),
+      additionalRetirementCorpusNeeded: fixed3
+        (corpusRequired - appreciatedExistingSavings),
+      lumpsumRequired: round(lumpsumRequired),
+      sipRequired: fixed3(sipRequired),
+      weightedPreRetirementReturn: fixed3(weightedPreRetirementReturn),
       investmentPattern,
     });
   } catch (err) {
