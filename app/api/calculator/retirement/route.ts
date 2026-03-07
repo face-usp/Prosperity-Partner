@@ -110,11 +110,17 @@ export async function POST(request: NextRequest) {
 
     const sipRequired = (remainingCorpusNeeded * r) / (Math.pow(1 + r, n) - 1);
 
-    // format
-    const nn = (num: number) => Math.max(0, num); // non-negative
-    const fixed3 = (num: number) => nn(Number(num.toFixed(3)));
-    const round = (num: number) => nn(Math.round(num));
-    
+    const nn = (num: number) => Math.max(0, num);
+
+const fixed3 = (num?: number) => {
+  const value = Number(num ?? 0);
+  return nn(Number(value.toFixed(3)));
+};
+
+const round = (num?: number) => {
+  const value = Number(num ?? 0);
+  return nn(Math.round(value));
+};
 
     // ---- Step 6: Delay Scenarios ----
     const delays = [0, 1, 3, 5];
@@ -132,7 +138,7 @@ export async function POST(request: NextRequest) {
         sip: fixed3(sip),
       };
     });
-
+    
 
     // ---- Response ----
     return NextResponse.json({
